@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BS CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- BS JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- Font awesom link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="./mainPageStyle.css">
+    <title>Socio Icons</title>
+    <link rel="icon" href="./code.png">
+</head>
+
+<body>
+    <!-- Div containing pre loader -->
+    <div id="preloader"></div>
+
+    <!-- Main div containig all data -->
+    <div id="main">
+
+        <!-- navbar code >>>> start >>>> -->
+        <nav id="navbar">
+            <span><img src="./code.png" alt="" width="70px" height="70px"></span>
+            <h2>SOCIAL MEDIA ICONS CODE GENERATOR </h2>
+        </nav>
+        <!-- navbar code <<<< end <<<< -->
+
+        <!-- Heading -->
+        <h2 class="headings">SELECT YOUR SOCIAL MEDIA ICONS</h2>
+
+        <!-- Icons code <<<< start <<<< -->
+        <div id="sIcons">
+            <input type="checkbox" name="Icon" id="facebook">
+            <label for="facebook" style=" background: #3B5998; " class="fa fa-facebook"> <p >Facebook</p> </label>
+
+            <input type="checkbox" name="Icon" value = "" id="twitter">
+            <label for="twitter" style="background: #55ACEE;" class="fa fa-twitter" > <p >Twitter</p> </label>
+
+            <input type="checkbox" name="Icon" value = "" id="google">
+            <label for="google" style=" background-color: #dd4b39; " class="fa fa-google"><p>Gooogle</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="linkedin">
+            <label for="linkedin" style=" background: #007bb5; " class="fa fa-linkedin"><p>Linkedin</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="youtube">
+            <label for="youtube" style=" background: #bb0000;" class="fa fa-youtube"><p>YouTube</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="instagram">
+            <label for="instagram" style=" background: #125688;" class="fa fa-instagram"><p>Instagram</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="pinterest">
+            <label for="pinterest" style=" background: #cb2027;" class="fa fa-pinterest"><p>Pinterest</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="snapchat">
+            <label for="snapchat"
+                style="background: #fffc00; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"
+                class="fa fa-snapchat-ghost"><p>SnapChat</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="skype">
+            <label for="skype" style=" background: #00aff0; " class="fa fa-skype"><p>Skype</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="android">
+            <label for="android" style=" background: #a4c639; " class="fa fa-android"><p>Android</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="dribbble">
+            <label for="dribbble" style=" background: #ea4c89; " class="fa fa-dribbble"><p>Dribbble</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="vimeo">
+            <label for="vimeo" style=" background: #45bbff; " class="fa fa-vimeo"><p>Vimeo</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="tumblr">
+            <label for="tumblr" style=" background: #2c4762; " class="fa fa-tumblr"><p>Tumblr</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="vine">
+            <label for="vine" style=" background: #00b489; " class="fa fa-vine"><p>Vine</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="foursquare">
+            <label for="foursquare" style=" background: #45bbff;" class="fa fa-foursquare"><p>FourSquare</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="stumbleupon">
+            <label for="stumbleupon" style=" background: #eb4924;" class="fa fa-stumbleupon"><p>Stumbleupon</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="flickr">
+            <label for="flickr" style=" background: #f40083;" class="fa fa-flickr"><p>Flickr</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="yahoo">
+            <label for="yahoo" style=" background: #430297;" class="fa fa-yahoo"><p>Yahoo</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="reddit">
+            <label for="reddit" style=" background: #ff5700; " class="fa fa-reddit"><p>Reddit</p></label>
+
+            <input type="checkbox" name="Icon" value = "" id="rss" >
+            <label for="rss" style=" background: #ff6600; " class="fa fa-rss"><p>RSS</p></label>
+
+        </div>
+        <!-- Icons code <<<< end <<<< -->
+
+        <!-- alert that will be showed when user click the GC button without selecting the icons -->
+        <div id="warAlert" style="display: none">
+            <div class="alert alert-warning d-flex align-items-center alert-dismissible" role="alert">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img"
+                    aria-label="Warning:">
+                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+                <div>
+                    You have not selected an icon
+                </div>
+                <button type="button" class="btn-close"
+                    onclick=" document.getElementById('warAlert').style.display = 'none' "></button>'
+            </div>
+        </div>
+
+
+        <!-- button that will triger the popup form using js to get links -->
+        <button id="btn" type="button" onclick="getIcons()">Generate Code</button>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- modal-header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Enter the Links of your selected social icons</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- modal-body -->
+                    <div class="modal-body">
+                        <form action="#" id="links" onsubmit="getLinks(event)">
+                    </div>
+                    <!-- modal-footer -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-outline-primary">Get Code</button>
+                        </form>
+                        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Codings Div-->
+            <div id="codeBox" >
+                <div id="head">
+                    <h5>Html Code</h5>
+                    <span id="copyBtn" class="fa fa-clone" title="Copy to clipboard"></span>
+                </div>
+                <hr>
+                <!-- html Code will be inserted here using js-->
+                <div id="htmlCode"></div>
+            </div>
+    </div>
+
+
+    <!-- preloader javascript code -->
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            setTimeout(() => { loader.style.display = "none" }, 1000);
+        });
+    </script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+body {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  background-image: url(https://i.pinimg.com/originals/5c/f2/66/5cf2660af5f4214def7166dc7a7c8062.jpg);
+  /* background-image: linear-gradient(to top, rgb(214, 214, 214), rgb(255, 255, 255)); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif;
+
+}
+
+/* Pre Loader styling */
+#preloader {
+  background: #ffffff url(./loadingGif.gif) no-repeat center center;
+  background-size: 50%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+/* Navbar styling */
+#navbar {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid hsla(180, 100%, 50%, 1);
+  padding: 8px;
+}
+
+#navbar h2 {
+  color: #111111;
+  font-weight: bold;
+  margin: 0%;
+  margin-left: 15px;
+}
+
+/* body heading styling */
+.headings {
+  color: #000000;
+  border: 2px solid #1b1c1c2e;
+  width: fit-content;
+  font-weight: bold;
+  padding: 15px 45px;
+  border-radius: 10px;
+  background-color: #fffffffb;
+  margin: 15px auto;
+  font-size: 26px;
+  /* box-shadow: #00ffc86e 0px 7px 29px 0px; */
+}
+
+/* button styling */
+#btn {
+  transition: 1s;
+  font-size: 24px;
+  background-color: black;
+  color: #ffffff;
+  border: 3px solid hsla(180, 100%, 50%, 1);
+  padding: 8px 15px;
+  margin: 10px auto;
+  display: flex;
+  border-radius: 10px;
+}
+
+#btn:hover {
+  transition: 1s;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 4px solid #000000;
+  padding: 10px 18px;
+  box-shadow: hsla(180, 100%, 50%, 1) 0px 4px 26px 1px;
+}
+
+/* --------- icons Styling --------- */
+#sIcons label.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: white;
+  margin: 8px;
+  border: 2px solid rgb(155, 155, 155);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#sIcons label.fa:hover {
+  transition: 0.5s;
+  border-bottom: 4px solid rgb(155, 155, 155);
+  box-shadow: #cecece 0px 7px 29px 0px;
+  opacity: 0.9;
+
+}
+
+input[type="checkbox"]:checked+label.fa {
+  width: 110px !important;
+  height: 110px !important;
+  border: 12px double rgb(235, 235, 235) !important;
+  box-shadow: hsla(180, 100%, 50%, 1) 0px 7px 29px 4px;
+}
+
+#sIcons {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#sIcons input[type="checkbox"] {
+  width: 0;
+}
+
+#sIcons label p {
+  font-size: 10px;
+  margin: 8px 0px 0px 0px !important;
+}
+
+
+/* Warning alert styling */
+.alert {
+  width: 400px;
+  margin: auto;
+}
+
+/* model styling >>>> start >>>> */
+.modal-content {
+  border: solid 4px hsla(180, 100%, 50%, 1);
+}
+
+.modal-title {
+  font-weight: bold;
+  color: #000000;
+  border-bottom: 4px solid hsla(180, 100%, 50%, 1);
+}
+
+#links label {
+  font-weight: bold;
+  border-bottom: 2px solid hsla(180, 100%, 50%, 1);
+}
+
+input.urlInput {
+  transition: 0.5s;
+  width: 95%;
+  height: 45px;
+  display: flex;
+  margin: 10px auto;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: solid 3px #000000;
+  border-radius: 5px;
+  box-shadow: rgba(146, 146, 148, 0.747) 0px 3px 8px 0px;
+  outline: none;
+}
+
+.urlInput:hover {
+  transition: 0.5s;
+  width: 96%;
+  height: 48px;
+  border-bottom: solid 4px hsla(180, 100%, 50%, 1);
+  box-shadow: 1px 2px 10px 1px rgb(174, 175, 180);
+}
+
+.btn {
+  border-bottom: solid 4px !important;
+}
+
+.btn:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 25px 3px rgba(146, 146, 148, 0.747) !important;
+}
+
+/* model styling <<<< end <<<< */
+
+/* Codings div styling <<<< start <<<< */
+#codeBox {
+  display: none;
+  background-color: #ffffff;
+  border: 2px solid hsla(180, 100%, 50%, 1);
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding: 15px;
+  box-shadow: 0px 0px 25px 3px rgba(182, 182, 182, 0.863)
+}
+
+#codeBox #head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#head h5 {
+  font-size: 22px;
+  font-weight: bold;
+  color: hsla(180, 100%, 50%, 1);
+  margin-bottom: 0px;
+}
+#copyBtn{
+  background-color: rgba(0, 255, 255, 0.521);
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.356);
+  border-radius: 6px;
+  padding: 8px;
+}
+hr {
+  border-top: 3px solid #000000;
+  opacity: 0.55;
+  margin: 12px 0px;
+}
+
+#htmlCode pre {
+  margin: 0px;
+}
+
+#htmlCode {
+  background-color: rgba(226, 226, 226, 0.486);
+  border: 2px solid rgba(226, 226, 226, 0.801);
+  border-radius: 10px;
+  padding: 15px;
+}
+.fa-check-circle::before {
+  font-size: 20px;
+  color: green;
+}
+
+/* Codings div styling <<<< end <<<< */
